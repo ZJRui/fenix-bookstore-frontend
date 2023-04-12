@@ -60,6 +60,9 @@ export default {
     product: Object
   },
   methods: {
+
+    // ...mapMutations(['increment']) 将this.increment()映射为 this.$store.commit('increment')
+
     ...mapMutations('cart', ['adjustCartItems']),
     ...mapActions('cart', ['setupSettlementBillWithDefaultValue']),
     /**
